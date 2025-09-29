@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Sergie Gui Fukarel</title>
+     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="../css/style.css"> 
+</head>
+<body>
+    <div class="bg-animation"></div>
+    <div class="geometric-bg"></div>
+    <div class="particles" id="particles"></div>
+
+    <nav>
+        <div class="nav-container">
+            <div class="logo">SGF</div>
+            <ul class="nav-links">
+                <li><a href="home.html" class="nav-link">Home</a></li>
+                <li><a href="profile.html" class="nav-link">About</a></li>
+                <li><a href="projects.html" class="nav-link">Projects</a></li>
+                <li><a href="contact.html" class="nav-link active">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main>
+        <section id="contact" class="section active">
+            <div class="container">
+                <h2 class="section-title">Get In Touch</h2>
+                
+                <div class="contact-grid"> 
+                    
+                    <div class="contact-info">
+                        <h3>Contact Details</h3>    
+                        <div class="contact-item">
+                            <div class="contact-icon"><i class="fa-solid fa-envelope"></i></div> <div>
+                                <strong>sergie211105@gmail.com</strong> 
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon"><i class="fa-brands fa-linkedin"></i></div> <div>
+                                <strong><a href="https://www.linkedin.com/in/sergie-gui-fukarel-5924a3292/" target="_blank" style="color: inherit; text-decoration: none;">Linkedin</a></strong> 
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon"><i class="fa-brands fa-github"></i></div> <div>
+                                <strong><a href="https://github.com/Sergie211105" target="_blank" style="color: inherit; text-decoration: none;">GitHub</a></strong> 
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon"><i class="fa-brands fa-instagram"></i></div> <div>
+                                <strong><a href="https://www.instagram.com/sergieguifukarel" target="_blank" style="color: inherit; text-decoration: none;">Instagram</a></strong> 
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-form">
+                        <h3>Send Me A Message</h3>
+                        <form id="contactForm" method="POST">
+                            <input type="hidden" name="access_key" value="YOUR_ACCESS_KEY_HERE"> 
+                            
+                            <input type="hidden" name="redirect" value="https://web3forms.com/success">
+                            <input type="hidden" name="subject" value="Pesan Baru dari Portfolio Anda">
+
+                            <div class="form-group">
+                                <label for="name">Name</label>
+                                <input type="text" id="name" name="name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="message">Message</label>
+                                <textarea id="message" name="message" rows="5" required></textarea>
+                            </div>
+                            <button type="submit" class="submit-btn">Send Message</button>
+                            <div id="result" style="margin-top: 15px; font-weight: bold; display: none;"></div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <script src="../js/contact.js"></script>
+</body>
+</html>

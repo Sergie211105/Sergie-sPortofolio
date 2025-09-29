@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects - Sergie Gui Fukarel</title>
+     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/projects.css">
+</head>
+<body>
+    <!-- Dynamic Background -->
+    <div class="bg-animation"></div>
+    <div class="geometric-bg"></div>
+    <div class="particles" id="particles"></div>
+
+    <!-- Navigation -->
+    <nav>
+        <div class="nav-container">
+            <div class="logo">SGF</div>
+            <ul class="nav-links">
+                <li><a href="home.html" class="nav-link">Home</a></li>
+                <li><a href="profile.html" class="nav-link">About</a></li>
+                <li><a href="projects.html" class="nav-link active">Projects</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main>
+        <!-- Projects Section -->
+        <section id="projects" class="section active">
+            <div class="container">
+                <h2 class="section-title">Projects</h2>
+                <div class="projects-grid">
+                    <div class="project-card" onclick="openProjectModal('project1')">
+                        <div class="project-header">
+                            
+                            <div>
+                                <h3>EcoLearn</h3>
+                                <div class="project-status">UI/UX Mobile</div>
+                            </div>
+                        </div>
+                        <div class="project-description">
+                            UI/UX case study and design for a mobile app focused on ecological education. 
+                            The project's success hinged on creating an incredibly intuitive and captivating 
+                            user experience—leveraging elements like Gamification—to genuinely drive user interest and long-term commitment to environmental awareness and action.
+                        </div>
+                        <div class="tech-stack">
+                            <span class="tech-tag">Figma</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://www.figma.com/proto/8T1lMG6l9CdqltCMZKfuT1/EcoLearn?node-id=2-8&p=f&t=Uyv7jcnIkQbbGbmp-1&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=2%3A8&show-proto-sidebar=1" target="_blank" rel="noopener noreferrer" class="project-link">Live Demo</a>
+                        </div>
+                    </div>
+
+                    <div class="project-card" onclick="openProjectModal('project2')">
+                        <div class="project-header">
+                            
+                            <div>
+                                <h3>Solaris</h3>
+                                <div class="project-status">Frond End Web Development</div>
+                            </div>
+                        </div>
+                        <div class="project-description">
+                            end-to-end design and responsive Frontend development for a digital marketplace. My role began with creating the high-fidelity UI/UX design itself, which was then translated into clean, scalable web code (HTML, CSS, JS). Key features implemented to boost user conversion include auto-filter searching, dynamic category and country-origin filters for product discovery, and essential functionality like a currency change option implemented during the checkout process.
+                        </div>
+                        <div class="tech-stack">
+                            <span class="tech-tag">HTML</span>
+                            <span class="tech-tag">CSS</span>
+                            <span class="tech-tag">Java Script</span>
+                           
+                        </div>
+                        <div class="project-links">
+                            <a href="https://solarismarketplace.netlify.app/" target="_blank" rel="noopener noreferrer" class="project-link">Live Demo</a>
+                            <a href="https://github.com/Sergie211105/solarismarketplace" target="_blank" rel="noopener noreferrer" class="project-link">GitHub</a>
+                        </div>
+                    </div>
+
+                    <div class="project-card" onclick="openProjectModal('project3')">
+                        <div class="project-header">
+                           
+                            <div>
+                                <h3>Planet Calorie</h3>
+                                <div class="project-status">Frond End Web Development</div>
+                            </div> 
+                        </div>
+                        <div class="project-description">
+                            Building a powerful, feature-rich calorie tracking website focused on helping users achieve specific health and fitness targets. Beyond functionality, the site was developed as a showcase of my interest in art and illustration, utilizing custom visuals and a creative aesthetic in the UI/UX to make the typically dry presentation of health data more engaging and visually appealing. 
+                            The site includes specialized tools for calculating BMR, maintenance, and precise calorie needs for cutting or bulking. The UI/UX was tailored to simplify complex data presentation, making it easy for users to stick to their dietary and fitness goals.
+                        </div>
+                        <div class="tech-stack">
+                            <span class="tech-tag">JavaScript</span>
+                            <span class="tech-tag">HTML</span>
+                            <span class="tech-tag">CSS</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://planetcalorie.vercel.app/" target="_blank" rel="noopener noreferrer" class="project-link">Live Demo</a>
+                            <a href="https://github.com/Sergie211105/planetcalorie" target="_blank" rel="noopener noreferrer" class="project-link">GitHub</a>
+                        </div>
+                    </div>
+
+                    <div class="project-card" onclick="openProjectModal('project4')">
+                        <div class="project-header">
+                            
+                            <div>
+                                <h3>Bttendence</h3>
+                                <div class="project-status">Face Recognition</div>
+                            </div>
+                        </div>
+                        <div class="project-description">
+                            A functional attendance system prototype that implements real-time Face Recognition technology. This technical solution was engineered for the university setting (BINUS) to streamline the check-in process, offering a faster and more secure method that completely prevents the issue of fraudulent attendance ("tibsen").
+                        </div>
+                        <div class="tech-stack">
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">HTML</span>
+                            <span class="tech-tag">Tailwind CSS</sp>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://docs.google.com/document/d/1hviABqoUVEzig6ztliwQYH2hZrQRWI3O93Yg2UICgbA/edit?usp=sharing" target="_blank" rel="noopener noreferrer" class="project-link">Preview</a>
+                            <a href="https://github.com/KevinP-devhub/Bttendance" target="_blank" rel="noopener noreferrer" class="project-link">GitHub</a>
+                            <a href="https://pdf.ac/rJKr1U2kTl" target="_blank" rel="noopener noreferrer" class="project-link">Background</a>
+                        </div>
+                    </div>
+
+                    <div class="project-card" onclick="openProjectModal('project5')">
+                        <div class="project-header">
+                            
+                            <div>
+                                <h3>Phising Detection with BERT</h3>
+                                <div class="project-status">Researh Methodology</div>
+                            </div>
+                        </div>
+                        <div class="project-description">
+                            This in-depth academic research details a rigorous methodology for leveraging the BERT model’s efficacy in identifying and flagging sophisticated phishing attempts. The work showcases significant proficiency in Natural Language Processing (NLP), managing extensive security datasets, and performing meticulous Machine Learning model validation within the critical domain of Digital Security. Furthermore, i'm happy to announce that the resulting paper has been peer-reviewed and accepted for presentation at the prestigious ISCT'25 conference.
+                        </div>
+                        <div class="tech-stack">
+                            
+                            <span class="tech-tag">Python</i></span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://docs.google.com/document/d/1xzULotgFkg7DmQ_9J2tEdAl-O5lHysH9ShHHZRN5SN0/edit?usp=sharing" target="_blank" rel="noopener noreferrer" class="project-link">Research Paper</a>
+                            <a href="https://colab.research.google.com/drive/1RQ1BNQUduGpBgUaMUYNGWyvKVDUrC03D?usp=sharing" target="_blank" rel="noopener noreferrer" class="project-link">Google Collab</a>
+                            <a href="https://docs.google.com/document/d/1Q3_7tXaLJCgPjGnuwL50tjY0tiUulRxVgGntvD7juno/edit?usp=sharing" target="_blank" rel="noopener noreferrer" class="project-link">Acceptence Blast</a>
+                        </div>
+                    </div>
+
+                    <div class="project-card" onclick="openProjectModal('project6')">
+                        <div class="project-header">
+                            
+                            <div>
+                                <h3>CS BookMate</h3>
+                                <div class="project-status">Book Recommendation System</div>
+                            </div>
+                        </div>
+                        <div class="project-description">
+                            Development of a web application prototype that acts as a smart, structured catalog and book recommendation system for Computer Science literature. The project integrated my Frontend skills with Python backend logic to deliver an easily searchable and well-organized resource, prioritizing logical information architecture.
+                        </div>
+                        <div class="tech-stack">
+                            <span class="tech-tag">HTML</span>
+                            <span class="tech-tag">CSS</span>
+                            <span class="tech-tag">Python</i></span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/hect1x/AI-ClassProject" target="_blank" rel="noopener noreferrer" class="project-link">Github</a>
+                            <a href="https://www.canva.com/design/DAGURPrdaBM/rdmu1ZCROP3BzGTE_J1mgQ/edit?utm_content=DAGURPrdaBM&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton" target="_blank" rel="noopener noreferrer" class="project-link">Background Preview</a>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+
+    <script src="../js/projects.js"></script>
+</body>
+</html>
