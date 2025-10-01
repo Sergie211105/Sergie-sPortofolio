@@ -33,21 +33,20 @@ document.addEventListener('DOMContentLoaded', () => {
         form.addEventListener('submit', function(e) {
             e.preventDefault();
             
-            const formData = new FormData(form);
-            const object = Object.fromEntries(formData);
-            const json = JSON.stringify(object);
+            const formData = new FormData(form); // Gunakan FormData
             
             // Tampilkan pesan "Please wait..."
             result.innerHTML = "Mohon tunggu..." 
+            // Externalnya:
             result.style.display = "block"; // Pastikan elemen result terlihat
 
             fetch('https://api.web3forms.com/submit', {
                 method: 'POST',
+                // Header Content-Type tidak diperlukan saat menggunakan FormData
                 headers: {
-                    'Content-Type': 'application/json',
-                    'Accept': 'application/json'
+                    'Accept': 'application/json' // Cukup header Accept
                 },
-                body: json
+                body: formData // Kirim FormData langsung
             })
             .then(async (response) => {
                 let responseJson = await response.json();
@@ -74,7 +73,7 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-
+    // ... (Fungsionalitas Navigasi Anda yang sudah benar)
     const currentPath = window.location.pathname;
     const navLinks = document.querySelectorAll('.nav-link');
 
