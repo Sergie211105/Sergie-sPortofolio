@@ -34,18 +34,27 @@ function animateTimeline() {
     });
 }
 
+
 // Initialize animations
 document.addEventListener('DOMContentLoaded', function() {
     createParticles();
     animateTimeline();
     
-    // Set active navigation link
-    const currentPage = window.location.pathname.split('/').pop();
+    // Set active navigation link (LOGIKA BARU)
+    const currentPath = window.location.pathname;
     const navLinks = document.querySelectorAll('.nav-link');
     
     navLinks.forEach(link => {
         link.classList.remove('active');
-        if (link.getAttribute('href') === currentPage) {
+        
+        const linkHref = link.getAttribute('href').split('/').pop();
+        const currentPageName = currentPath.split('/').pop();
+        
+        if (linkHref === currentPageName) {
+            link.classList.add('active');
+        }
+        // Penanganan untuk link Home ("../index.html") di halaman subfolder
+        if (linkHref === "index.html" && (currentPageName === "" || currentPageName === "index.html")) {
             link.classList.add('active');
         }
     });

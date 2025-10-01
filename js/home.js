@@ -17,13 +17,23 @@ function createParticles() {
 document.addEventListener('DOMContentLoaded', function() {
     createParticles();
     
-    // Set active navigation link
-    const currentPage = window.location.pathname.split('/').pop();
+    // Set active navigation link (LOGIKA BARU)
+    const currentPath = window.location.pathname;
     const navLinks = document.querySelectorAll('.nav-link');
     
     navLinks.forEach(link => {
         link.classList.remove('active');
-        if (link.getAttribute('href') === currentPage) {
+        
+        const linkHref = link.getAttribute('href').split('/').pop();
+        const currentPageName = currentPath.split('/').pop();
+        
+        // Kasus spesial untuk halaman index (karena bisa jadi path hanya '/')
+        if (currentPageName === "" || currentPageName === "index.html") {
+            // Jika di halaman utama, pastikan link Home yang aktif
+            if (linkHref === "index.html") {
+                 link.classList.add('active');
+            }
+        } else if (linkHref === currentPageName) {
             link.classList.add('active');
         }
     });
